@@ -33,6 +33,7 @@ class YahtzeeHomeState extends State<YahtzeeHome>
 {
   Dice dice = Dice(); //instantiate outside you don't want to rebuild each time
   int sum = 0;
+  
   void calculateSum() {
     sum = 0; // Reset sum
     for (int diceVal in dice.diceValuesList) { //in keyword not :
@@ -95,6 +96,7 @@ class YahtzeeHomeState extends State<YahtzeeHome>
             }),
           ),
           SizedBox(height: 50),
+          //Roll button
           ElevatedButton(
             onPressed: () {
               setState(() {
