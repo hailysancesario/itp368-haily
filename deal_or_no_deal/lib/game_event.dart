@@ -1,4 +1,3 @@
-// lib/blocs/game_event.dart
 abstract class GameEvent {}
 
 class PickHoldSuitcase extends GameEvent {

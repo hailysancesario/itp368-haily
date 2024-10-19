@@ -1,4 +1,3 @@
-// lib/blocs/game_state.dart
 import 'suitcase.dart';
 
 class GameState {
@@ -30,7 +29,7 @@ double calculateOffer() {
   //calc the average value. If count is zero, set average to zero.
   double averageValue = (count > 0) ? totalValue / count : 0;
 
-  //get90% of the average value as the dealer's offer.
+  //get 90% of the average value as the dealer's offer.
   return averageValue * 0.9; // Multiply by 0.9 for the offer
 }
 }
